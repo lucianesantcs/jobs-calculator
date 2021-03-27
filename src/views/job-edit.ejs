@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#41414C" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
     <title>JobsCalc</title>
 
     <link rel="stylesheet" href="/styles/main.css" />
@@ -27,14 +27,7 @@
     
   </head>
   <body id="page-job-edit">
-    <header class="page-header inner">
-      <div class="container animate-up">
-        <a href="index.html" class="back">
-          <img src="./images/back.svg" alt="" />
-        </a>
-        <h1>Editar Job</h1>
-      </div>
-    </header>
+    <%- include('parts/page-header', {title: 'Editar job'}) %>
 
     <div class="container flex animate-up delay-2">
         <form id="form-job">
@@ -79,7 +72,7 @@
         </form>
       </main>
       <aside class="card">
-        <img src="./images/money-color.svg" alt="Imagem de Dinheiro">
+        <img src="/images/money-color.svg" alt="Imagem de Dinheiro">
         <p>
           O valor do projeto ficou em <strong>R$ 4576,00</strong>
         </p>
@@ -94,7 +87,7 @@
             class="button gray open-modal"
             >
             <img 
-              src="./images/trash-24.svg" 
+              src="/images/trash-24.svg" 
               alt="Cancelar cadastro" 
               title="Cancelar cadastro">
           </a>
@@ -106,7 +99,7 @@
 
     <div class="modal-wrapper">
       <div class="modal">
-        <img src="./images/trash-48.svg" alt="Excluir Job" title="Excluir Job" />
+        <img src="/images/trash-48.svg" alt="Excluir Job" title="Excluir Job" />
         <h3>Excluir Job</h3>
         <p>Quer mesmo excluir esse job? <br/>
         Ele será apagado para sempre.  
